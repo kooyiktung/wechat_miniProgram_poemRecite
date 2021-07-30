@@ -1,0 +1,83 @@
+<!-- 登录授权 -->
+<view wx:if="{{isHide}}">
+  <view wx:if="{{canIUse}}">
+    <view class='header'>
+      <image src='/images/logo.jpeg'></image>
+    </view>
+
+    <view class='content'>
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+
+    <button class='btn' type='' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+      授权登录
+    </button>
+  </view>
+  <view wx:else>请升级微信版本</view>
+</view>
+<view wx:if="{{!isHide&&user}}">
+  <!-- nav顶部标签栏 -->
+  <view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>学习</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>复习</view>
+  </view>
+  <swiper current="{{currentData}}" class='swiper' duration="300" bindchange="bindchange">
+    <!-- 学习 -->
+    <swiper-item class="swiper_box">
+      <view class='swiper_box1'>
+        <view class="today_detail">今日学习内容</view>
+        <view class="task">学习古诗《行宫》</view>
+        <view class="task">学习古诗《登黄鹤楼》</view>
+        <view class="task">学习古诗《相思》</view>
+      </view>
+      <view class='swiper_box2'>
+        <view class="today_cal">
+          <x-calendar user="{{user}}" />
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 复习 -->
+    <swiper-item class="review_box">
+      <view class='review_box1' bind:tap="bindGame">
+        <view class="review_innerbox">
+          <view class="review_innferboxleft">
+            <view class="txt1" style="font-weight:bold">宫格寻诗</view>
+            <view class="txt2">
+              <view>快来检测学习成果吧</view>
+              <!-- <view>3次</view> -->
+            </view>
+          </view>
+          <view class="review_innferboxright">
+            <view class="pic">
+              <view class="pic1">
+                <image src="{{src}}"></image>
+              </view>
+              <view class="pic2" style="color:#FFAD01">4颗</view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='review_box2'>
+        <view class="review_innerbox">
+          <view class="review_innferboxleft">
+            <view class="txt1" style="font-weight:bold">诗唱成曲</view>
+            <view class="txt2">
+              <view>请欣赏奇妙的词曲音乐</view>
+              <!-- <view>6次</view> -->
+            </view>
+          </view>
+          <view class="review_innferboxright">
+            <view class="pic">
+              <view class="pic1">
+                <image src="{{src1}}"></image>
+              </view>
+              <view class="pic2" style="color:#0094FF">2颗</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

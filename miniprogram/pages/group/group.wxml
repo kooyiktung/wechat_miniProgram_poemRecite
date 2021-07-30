@@ -1,0 +1,56 @@
+<!-- 社区导航title -->
+<view class="box1">
+  <view class="groupImg">
+    <image src="{{zhi}}"></image>
+  </view>
+  <view class="groupMsg" style="margin-top:40rpx; color:black">壮志诗词</view>
+  <!-- <view class="groupMsg">5人已加入 | 10篇日记</view> -->
+  <view class="groupMsg">5人已加入</view>
+</view>
+<!-- 日记成员nav -->
+<!-- <view class="{{scrollTop > 170 ? 'box2Fix' : 'box2'}}"> -->
+<view class="box2">
+  <view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent' data-tab="0">日记</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent' data-tab="1">成员</view>
+  </view>
+</view>
+<!-- 日记成员选块内容 -->
+<swiper current="{{currentData}}" class='swiper' style="height:100%;" duration="300" indchange="bindchange">
+  <!-- 日记列表 -->
+  <swiper-item class="dailyBox">
+    <scroll-view class="dailyContainer" scroll-y="true" style="height:100%;">
+      <block wx:for="{{diaryList}}" wx:key="_id">
+        <view class="dailyPanel">
+          <x-diary-card diary="{{item}}" />
+          <x-diary-ctrl 
+            iconfont="iconfont"
+            icon-comment="icon-comment"
+            icon-like="icon-like"
+          />
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+  <!-- 成员列表 -->
+  <swiper-item class="memberBox">
+    <scroll-view scroll-y="true" style="height:100%;">
+      <view wx:for="{{members}}">
+        <image src="{{item.userInfo.avatarUrl}}" mode="aspectFill"></image>
+        <text>{{item.userInfo.nickName}}</text>
+        <text style="text-align:right;">{{item.star}}颗🌟</text>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+
+<!-- 评论底部弹出栏 -->
+<x-bottom-modal modelShow="{{modelShow}}">
+  <view>
+    <view>插槽</view>
+    <button>按钮</button>
+  </view>
+</x-bottom-modal>
+
+<!-- 底部导航栏 -->
+<tabbar tabbar="{{mytabbar}}"></tabbar>

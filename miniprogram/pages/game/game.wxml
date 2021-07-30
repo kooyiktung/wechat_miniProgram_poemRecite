@@ -1,0 +1,16 @@
+<view class='game__container'>
+  <view class="poem__container">
+    <view class="poem__item" wx:for="{{selectedPoem}}" data-index="{{index}}">{{item}}</view>
+  </view>
+  <view class="game__downcount">倒计时: {{downCount}}</view>
+  <view class='game__result'>
+    <view class='result__wrap' wx:for='{{resultList}}' data-index='{{index}}'>{{item}}</view>
+  </view>
+  <view class='game__wrap'>
+    <view class="game__box {{wordList[index].isSelected?'game__box--selected':''}}" wx:for='{{wordList}}' bindtap = "{{downCount<=0?'':'handleBoxClick'}}" data-index='{{index}}'>{{item.name}}</view>
+  </view>
+  <view class="game__submit {{resultList.length === 5?'game__submit--show':'game__submit--hide'}}" bindtap = "handleSubmit">
+    提交
+  </view>
+</view>
+

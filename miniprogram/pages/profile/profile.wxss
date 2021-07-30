@@ -1,0 +1,133 @@
+/* pages/profile/profile.wxss */
+.userInfo {
+  width: 90%;
+  height: 200rpx;
+  /* background-color: greenyellow; */
+  margin: 10rpx auto;
+  display: flex;
+  align-items: center;
+}
+.userImg image {
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+  box-shadow: 1rpx 0 5px rgba(0, 148, 255, 0.8);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userNickName {
+  width: auto;
+  margin-left: 20rpx;
+}
+.learnInfo1 {
+  /* width: 140rpx; */
+  width: auto;
+  height: 100rpx;
+  margin: 0 5rpx 0 20rpx;
+  text-align: center;
+  padding: 5px;
+  /* background-color: red; */
+}
+  .learnInfo1::before {
+    content: "";
+    width: 3rpx;
+    height: 50%;
+    background-color: #5B5B5B;
+    position: absolute;
+    left: auto;
+    top: auto;
+    bottom: 15px;
+    right: 0;
+  }
+.learnInfo2 {
+  /* width: 160rpx; */
+  width: auto;
+  height: 100rpx;
+  /* background-color: yellow; */
+  text-align: center;
+  padding: 3px;
+}
+.count {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  height: 40rpx; 
+}
+.item {
+  color: #5B5B5B;
+  margin-top: 20rpx;
+}
+.getStar {
+  width: 90%;
+  height: 100rpx;
+  border-radius: 20rpx;
+  box-shadow: 1rpx -1rpx 5px rgba(0, 148, 255, 1);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.getStarTxt {
+  width: 85%;
+  /* background-color: red; */
+  margin-left: 30rpx;
+  font-size: 1.4rem;
+}
+.getStarCot {
+  width: 15%;
+  /* background-color: green; */
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.boxRecord {
+  width: 90%;
+  height: 68rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.innerBox {
+  width: 90%;
+  height: 100rpx;
+  margin: 0 auto;
+  padding: 30rpx 0 10rpx 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid rgba(91,91,91,0.5);
+  /* background-color: red; */
+}
+.innerPic {
+  width: 13%;
+  /* background-color: red; */
+}
+.innerPic image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.innerTxt {
+  width: 76%;
+  /* background-color: green; */
+  font-size: 1.1rem;
+  color: #5B5B5B;
+}
+.innerClick {
+  width: 10%;
+  text-align: right;
+  /* background-color: yellow; */
+}
+.innerClick image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.notice {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+.innerNot {
+  padding: 5rpx;
+  color: rgba(91,91,91,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

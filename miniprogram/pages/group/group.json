@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "tabbar": "../../components/tabbarComponent/mytabbar",
+    "x-diary-card": "../../components/diary-card/diary-card",
+    "x-bottom-modal": "../../components/bottom-modal/bottom-modal",
+    "x-diary-ctrl": "../../components/diary-ctrl/diary-ctrl"
+  },
+  "enablePullDownRefresh": true
+}

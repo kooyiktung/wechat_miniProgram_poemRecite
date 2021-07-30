@@ -1,0 +1,15 @@
+<!-- <view class='container'>
+  <view class="title">壮志诗词</view>
+  <block wx:for="{{poems}}" wx:key="index">
+    <view class='text-content' bindtap="go">{{item}}</view> 
+  </block>
+</view> -->
+
+<view class='container'>
+  <view class="title">壮志诗词</view>
+  <block wx:for="{{poemlist}}" wx:key="{{index}}">
+    <view class='text-content' bindtap="goToPoem" data-index='{{index}}'>
+      {{item.detailid}}. {{item.name}}
+    </view> 
+  </block>
+</view>

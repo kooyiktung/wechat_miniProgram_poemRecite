@@ -1,0 +1,44 @@
+<view class="userInfo">
+  <!-- <view class="userImg"><open-data type="useravatarUrl"></open-data></view> -->
+  <view class="userImg"><image src="{{userInfo.avatarUrl}}"></image></view>
+  <view class="userNickName">{{userInfo.nickName}}</view>
+  <!-- <view class="userNickName"><open-data type="userNickName"></open-data></view> -->
+  <!-- <view class="learnInfo1" style="position: relative">
+    <view class="count">3</view>
+    <view class="item">打卡天数</view>
+  </view>
+  <view class="learnInfo2">
+    <view class="count">30</view>
+    <view class="item">已学诗词数</view>
+  </view> -->
+</view>
+<view class="getStar">
+  <view class="getStarTxt">获得的星星数量</view>
+  <view class="getStarCot">{{countStar}}</view>
+</view>
+<view class="boxRecord">学习记录</view>
+<view class="innerBox">
+  <view class="innerPic"><image src="{{srcImg}}"></image></view>
+  <view class="innerTxt">打卡日历</view>
+  <view class="innerClick" bindtap="go"><image src="{{srcGo}}"></image></view>
+</view>
+<view class="innerBox">
+  <view class="innerPic"><image src="{{srcImg}}"></image></view>
+  <view class="innerTxt">诗词学习历史记录</view>
+  <view class="innerClick" bindtap="go1"><image src="{{srcGo}}"></image></view>
+</view>
+<view class="boxRecord">更多</view>
+<view class="innerBox">
+  <view class="innerPic"><image src="{{srcImg}}"></image></view>
+  <view class="innerTxt">关于我们</view>
+  <view class="innerClick" bindtap="go2"><image src="{{srcGo}}"></image></view>
+</view>
+<view class="innerBox">
+  <view class="innerPic"><image src="{{srcImg}}"></image></view>
+  <view class="innerTxt">使用提示</view>
+  <view class="innerClick" bindtap="go3"><image src="{{srcGo}}"></image></view>
+</view>
+<view class="notice">
+  <view class="innerNot">部分资源来源于网络，仅做学习交流使用</view>
+  <view class="innerNot">如有侵权，请联系我们</view>
+</view>

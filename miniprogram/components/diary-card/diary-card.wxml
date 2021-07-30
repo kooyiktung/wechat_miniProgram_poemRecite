@@ -1,0 +1,21 @@
+<view class="diary">
+  <view class="diary-title">
+    <image class="diary-portrait" src="{{diary.avatarUrl}}"></image>
+    <view class="diary-box">
+      <view>{{diary.nickName}}</view>
+      <view class="diary-time">{{_createTime}}</view>
+    </view>
+  </view>
+  <view class="diary-content">{{diary.content}}</view>
+  <view class="diary-audio"><x-audio-play /></view>
+  <view class="diary-img">
+    <block wx:for="{{diary.img}}" wx:key="{{index}}">
+      <image class="img" src="{{item}}" mode="aspectFill" 
+      bind:tap="onPreviewImage" 
+      data-imgsrc="{{item}}" 
+      data-imgs="{{diary.img}}"
+      ></image>
+    </block>
+  </view>
+
+</view>

@@ -1,0 +1,80 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="Container">
+  <view class="recChange"></view>
+  <view class="btnCon">
+    <view class="circleBtn {{currentSelectType == 'poem' ? 'active' : ''}}" bindtap='selectedPoe' data-id='poem'>原</view>   
+    <view class="circleBtn {{currentSelectType == 'comment' ? 'active' : ''}}" style="margin-top:30rpx" bindtap='selectedCom' data-id='comment'>注</view>
+    <view class="circleBtn {{currentSelectType == 'appreciate' ? 'active' : ''}}" style="margin-top:30rpx" bindtap='selectedApp' data-id='appreciate'>赏</view>
+    <view class="circleBtn {{currentSelectType == 'translate' ? 'active' : ''}}" style="margin-top:30rpx" bindtap='selectedTrans' data-id='translate'>译</view>
+    <view class="circleBtn {{currentSelectType == 'pinyin' ? 'active' : ''}}" style="margin-top:30rpx" bindtap='selectedPin' data-id='pinyin'>拼</view>
+    <view class="circleBtn {{currentSelectType == 'video' ? 'active' : ''}}" style="margin-top:30rpx" bindtap='selectedVid' data-id='video'>视</view>
+  </view>
+</view>
+<view class="recChange" wx:if="{{currentSelectType == 'poem'}}" duration="300">
+  <view class="poem">
+    <text>{{poemInfo.title}}</text>
+    <text>{{poemInfo.author}}</text>
+    <view class="poemContent">
+      <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+    </view>
+    <!-- <text>明月别枝惊鹊，清风半夜鸣蝉</text>
+    <text>稻花香里说丰年，听取蛙声一片</text>
+    <text>七八个星天外，两三点雨山前</text>
+    <text>旧时茅店社林边，路转溪头忽见</text> -->
+  </view>
+</view>
+<view class="recChange" wx:if="{{currentSelectType == 'comment'}}" duration="300">
+  <!-- <view class="zhushi">
+    <text>西江月：词牌名。\n</text>
+    <text>黄沙：黄沙岭，在江西上饶的西面。\n</text>
+    <text>别枝惊鹊：惊动喜鹊飞离树枝。\n</text>
+    <text>鸣蝉：蝉叫声。\n</text>
+    <text>旧时：往日。\n</text>
+    <text>茅店：茅草盖的乡村客店。\n</text>
+    <text>社林：土地庙附近的树林。\n</text>
+    <text>社，土地神庙。\n</text>
+    <text>古时，村有社树，为祀神处，故曰社林。\n</text>
+    <text>见：同“现”，显现，出现。\n</text>
+  </view> -->
+  <view class="recChange_comment">
+    <template is="wxParse" data="{{wxParseData:explanation.nodes}}" />
+  </view>
+</view>
+<view class="recChange" wx:if="{{currentSelectType == 'appreciate'}}" duration="300">
+  <view class="recChange_appreciate">
+    <template is="wxParse" data="{{wxParseData:appreciation.nodes}}" />
+  </view>
+</view>
+<view class="recChange" wx:if="{{currentSelectType == 'translate'}}" duration="300">
+  <view class="translate" style="margin-top: 150rpx; padding: 68rpx">
+    <text>皎洁的月光从树枝间掠过，惊飞了枝头喜鹊，清凉的晚风吹来仿佛听见了远处的蝉叫声。</text>
+    <text>在稻花的香气里，耳边传来一阵阵青蛙的叫声，好像在讨论，说今年是一个丰收的好年景。</text>
+    <text>天空乌云密布，星星闪烁，忽明忽暗，山前下起了淅淅沥沥的小雨。</text>
+    <text>往日的小茅草屋还在土地庙的树林旁，道路转过溪水的源头，它便忽然出现在眼前。</text>
+  </view>
+</view>
+<view class="recChange" wx:if="{{currentSelectType == 'pinyin'}}" duration="300">
+  <!-- <view class="pinyin">
+    <text>xī  jiāng  yuè </text>
+    <text style="margin-bottom: 10rpx;">西 江 月</text>
+    <text>xīn qì jí</text>
+    <text style="margin-bottom: 10rpx;">辛弃疾</text>
+    <text>míng yuè bié zhī jīng què</text>
+    <text style="margin-bottom: 10rpx; letter-spacing: 28rpx;">明月别枝惊鹊</text>
+    <text>qīng fēng bàn yè míng chán</text>
+    <text style="margin-bottom: 10rpx; letter-spacing: 28rpx;">清风半夜鸣蝉</text>
+    <text>dào huā xiāng lǐ shuō fēng nián</text>
+    <text style="margin-bottom: 10rpx; letter-spacing: 28rpx;">稻花香里说丰年</text>
+    <text>tīng qǔ wā shēng yī piàn</text>
+    <text style="margin-bottom: 10rpx; letter-spacing: 28rpx;">听取蛙声一片</text>
+    <text>qī bā gè xīng tiān wài</text>
+    <text style="margin-bottom: 10rpx; letter-spacing: 28rpx;">七八个星天外</text>
+    <text>liǎng sān diǎn yǔ shān qián</text>
+    <text style="margin-bottom: 10rpx; letter-spacing: 28rpx;">两三点雨山前</text>
+    <text>jiù shí máo diàn shè lín biān</text>
+    <text style="margin-bottom: 10rpx; letter-spacing: 28rpx;">旧时茅店社林边</text>
+    <text>lù zhuǎn xī tóu hū jiàn</text>
+    <text style="margin-bottom: 10rpx; letter-spacing: 20rpx;">路转溪头忽见</text>
+  </view> -->
+</view>
+<view class="recChange" wx:if="{{currentSelectType == 'video'}}" duration="300">shipin </view>

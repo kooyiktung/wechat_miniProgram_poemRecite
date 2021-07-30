@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/community/community",
+    "pages/profile/profile",
+    "pages/useTips/useTips",
+    "pages/aboutUs/aboutUs",
+    "pages/studyHistory/studyHistory",
+    "pages/clickCal/clickCal",
+    "pages/group/group",
+    "pages/public/public",
+    "pages/bookList/bookList",
+    "pages/rankList/rankList",
+    "pages/poem/poem",
+    "pages/game/game",
+    "pages/position/position"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#AAAAAA",
+    "selectedColor": "#0094FF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/indexselected.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/shequselected.png",
+        "iconPath": "images/shequ.png",
+        "pagePath": "pages/community/community",
+        "text": "社区"
+      },
+      {
+        "selectedIconPath": "images/personalselected.png",
+        "iconPath": "images/personal.png",
+        "pagePath": "pages/profile/profile",
+        "text": "我的"
+      }
+    ]
+  },
+  "plugins": {
+    "calendar": {
+      "version": "1.1.3",
+      "provider": "wx92c68dae5a8bb046"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "位置信息效果展示"
+    }
+  }
+}

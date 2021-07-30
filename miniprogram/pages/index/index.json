@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-calendar": "/components/calendar/calendar"
+  },
+  "navigationBarTitleText": "首页"
+}

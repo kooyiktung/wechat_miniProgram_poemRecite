@@ -1,0 +1,112 @@
+/* pages/detail/detail.wxss */
+@import "../../wxParse/wxParse.wxss";
+
+.Contianer {
+  width: 100%;
+  position: relative;
+}
+
+.recChange {
+  position: absolute;
+  z-index: 2;
+  width: 80%;
+  height: 1000rpx;
+  border-radius: 30rpx;
+  box-shadow: 1rpx 0 5px rgba(0, 148, 255, 1);
+  left: 0;
+  right: 0;
+  margin: 100rpx auto;
+}
+
+.btnCon {
+  position: absolute;
+  margin-left: 620rpx;
+  margin-top: 200rpx;
+  z-index: 3;
+  float: right;
+  width: 110rpx;
+  height: 800rpx;
+  /* background-color: greenyellow; */
+}
+
+.circleBtn {
+  /* position: absolute;
+  z-index: 4; */
+  width: 100rpx;
+  height: 100rpx;
+  background-color: white;
+  border-radius: 50%;
+  border: 1rpx solid #ffad01;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffad01;
+}
+
+.circleBtn.active {
+  width: 100rpx;
+  height: 100rpx;
+  color: white;
+  background-color: #ffad01;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poem {
+  margin-top: 200rpx;
+}
+
+.poem text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+
+.recChange_comment .wxParse-p {
+  margin: 50rpx 75rpx 0 20rpx;
+  /* justify-content: center; */
+  text-align: justify;
+}
+
+.recChange_appreciate .wxParse-p {
+  margin: 20rpx 75rpx 20rpx 20rpx;
+  text-align: justify;
+}
+
+.poemContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+
+.translate text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+
+.zhushi {
+  margin-top: 200rpx;
+  line-height: 60rpx;
+}
+
+.zhushi text {
+  margin-left: 30rpx;
+  justify-content: center;
+}
+
+.pinyin {
+  margin-top: 50rpx;
+}
+
+.pinyin text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*字体间距属性*//* letter-spacing: 6rpx; */
+}

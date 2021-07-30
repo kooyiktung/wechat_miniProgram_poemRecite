@@ -1,0 +1,117 @@
+/* pages/group/group.wxss */
+
+page {
+  height: 100%;
+}
+
+.box1 {
+  width: 100%;
+  height: 170rpx;
+  padding: 40rpx;
+  background-color: white;
+}
+
+.box2Fix {
+  height: 80rpx;
+  background-color: white;
+  top: 0rpx;
+  position: fixed;
+  z-index: 99;
+}
+
+.box2 {
+  /* width: 98%; */
+  height: 80rpx;
+  background-color: white;
+  top: 170rpx;
+  /* border-bottom: 1px solid rgba(91,91,91,0.5); *//* background-color: antiquewhite;
+  border: 2rpx red solid; *//* margin : 2rpx auto; */
+}
+
+.groupImg image {
+  width: 25%;
+  height: 180rpx;
+  float: left;
+  border-radius: 20rpx;
+  /* background-color: green; *//* margin: 0 0 0 40rpx; */
+}
+
+.groupMsg {
+  width: 70%;
+  height: 50rpx;
+  float: right;
+  color: #b5b5b5;
+  line-height: 50rpx;
+  /* background-color: peru; */
+}
+
+.tab {
+  float: left;
+  width: 10%;
+  text-align: center;
+  padding: 10rpx 0;
+  margin-left: 30rpx;
+  font-weight: bold;
+  color: #dbdbdb;
+}
+
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.tabBorer {
+  border-bottom: 8rpx solid #0094ff;
+  border-radius: 3rpx;
+  color: #0094ff;
+}
+
+.swiper {
+  width: 100%;
+}
+
+/* .dailyBox {
+  width: 90%;
+  height: 300rpx;
+  background-color: greenyellow;
+} */
+
+.dailyContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+  /* background-color: #8f8f8f; */
+}
+
+.dailyPanel {
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.memberBox {
+  margin-top: 1rpx;
+  background-color: #fff;
+}
+
+.memberBox view {
+  width: 710rpx;
+  padding: 10rpx 20rpx;
+  border-bottom: 1rpx solid #f6f6f6;
+  float: left;
+}
+
+.memberBox image {
+  width: 100rpx;
+  height: 100rpx;
+  float: left;
+  border-radius: 100rpx;
+}
+
+.memberBox text {
+  width: 250rpx;
+  padding: 25rpx;
+  font-size: 35rpx;
+  text-align: left;
+  float: left;
+}

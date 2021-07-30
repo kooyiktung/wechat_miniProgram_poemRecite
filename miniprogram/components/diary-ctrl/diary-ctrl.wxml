@@ -1,0 +1,10 @@
+<view class="ctrl">
+  <view class="ctrl-item" bind:tap="onClick">
+    <i class="iconfont icon-comment icon"></i>
+    <text>评论</text>
+  </view>
+  <view class="ctrl-item like">
+    <i class="iconfont icon-like icon"></i>
+    <text>点赞</text>
+  </view>
+</view>

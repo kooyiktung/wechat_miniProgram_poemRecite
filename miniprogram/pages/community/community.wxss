@@ -1,0 +1,72 @@
+.switch-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+.switch-type .btn:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0.5rpx;
+}
+.switch-type .btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.switch-type .btn {
+  background: #fff;
+  border: 2rpx solid #0094FF;
+  color: #0094FF;
+  padding: 10rpx 60rpx;
+  border-radius: 10rpx;
+}
+.switch-type .btn.active {
+  border: 2rpx solid #0094FF;
+  background: #0094FF;
+   /* #007bff */
+  color: white;
+}
+.gradebox,.themebox {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gradebox1,.themebox1{
+  width: 90%;
+  /* border: 1px solid #F00;
+  background: #FF0;  */
+  overflow: hidden;
+  margin-top: 70rpx;
+  color: #0094FF;
+}
+.gradebox1_left,.gradebox1_right {
+  width: 48%;
+  height: 400rpx;
+  border:1px solid #007bff;
+  background: #FFF;
+  border-radius: 10rpx;
+}
+/* .gradebox1_left image, .gradebox1_right image{
+  width: 180.84px;
+  height: 400rpx;
+} */
+.gradebox1_left,.themebox1_left{
+  float: left;
+  text-align: center;
+  line-height: 400rpx;
+}
+.gradebox1_right,.themebox1_right{
+  float: right;
+  text-align: center;
+  line-height: 400rpx;
+}
+.themebox1_left,.themebox1_right{
+  width: 48%;
+  height: 240rpx;
+  border:1px solid #007bff;
+  background: #FFF;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 240rpx;
+}

@@ -1,0 +1,45 @@
+<!-- <view class="nav-header">
+  <view wx:for="{{navs}}" wx:key='' class="nav-cell {{item.alias == activeNav ? 'active':''}}" bindtap="changeList" data-alias="{{item.alias}}">{{item.text}}</view>
+</view> -->
+
+<!-- <block wx:if="{{activeNav == 'rank'}}"> -->
+<view class="rankBox">
+  <view class="innerBox1">
+    <view class="nickName">
+      <open-data type="userNickName"></open-data>
+    </view>
+    <view class="avatarUrl">
+      <open-data type="useravatarUrl"></open-data>
+    </view>
+    <view class="ranking">本周排名:{{self_rank}}</view>
+  </view>
+
+  <view wx:for="{{members}}" class="members_list">
+    <view wx:if="{{item.idx%3==0}}" class="innerBox2">
+      <view class="nickName">{{item.userInfo.nickName}}</view>
+      <image src="{{item.userInfo.avatarUrl}}" mode="aspectFill" class="avatarUrl"></image>
+      <view class="ranking">第{{item.idx}}名--{{item.star}}颗🌟</view>
+    </view>
+
+    <view wx:if="{{item.idx%3==1}}" class="innerBox3">
+      <view class="nickName">{{item.userInfo.nickName}}</view>
+      <image src="{{item.userInfo.avatarUrl}}" mode="aspectFill" class="avatarUrl"></image>
+      <view class="ranking">第{{item.idx}}名--{{item.star}}颗🌟</view>
+    </view>
+
+    <view wx:if="{{item.idx%3==2}}" class="innerBox4">
+      <view class="nickName">{{item.userInfo.nickName}}</view>
+      <image src="{{item.userInfo.avatarUrl}}" mode="aspectFill" class="avatarUrl"></image>
+      <view class="ranking">第{{item.idx}}名--{{item.star}}颗🌟</view>
+    </view>
+  </view>
+</view>
+<!-- </block> -->
+
+<!-- <block wx:if="{{activeNav == 'mark'}}">
+  <view class="markBox">
+    今日还没有学习打卡，没有日签喔～～～
+    <canvas canvas-id="shareCanvas" style="width:600px;height:900px"></canvas>
+
+  </view>
+</block> -->

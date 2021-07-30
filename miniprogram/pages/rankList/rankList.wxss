@@ -1,0 +1,94 @@
+/* pages/rankList/rankList.wxss */
+
+.nav-header {
+  font-size: 28.12rpx;
+  display: -webkit-box;
+  text-align: center;
+  background: #fff;
+  padding: 0 16.41rpx;
+  height: 100.77rpx;
+  line-height: 100.77rpx;
+}
+
+.nav-cell {
+  -webkit-box-flex: 1;
+}
+
+.nav-cell.active {
+  color: #0094ff;
+  border-bottom: #0094ff 4.69rpx solid;
+}
+
+.rankBox, .markBox {
+  margin: 80rpx auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerBox1 {
+  width: 100%;
+  height: 200rpx;
+  background-color: #0094ff;
+  border-radius: 10rpx;
+  box-shadow: 1rpx 0 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 28.12rpx;
+  padding: 20rpx;
+}
+
+.nickName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarUrl {
+  float: left;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 30rpx;
+  background-color: black;
+}
+
+.ranking {
+  float: right;
+  font-size: 40rpx;
+  font-weight: bold;
+  width: 65%;
+  margin-top: 40rpx;
+}
+
+.members_list{
+  width: 100%;
+}
+
+.innerBox2, .innerBox3, .innerBox4 {
+  margin-top: 36rpx;
+  /* width: 100%; */
+  height: 200rpx;
+  /* border: #FFAD01 2rpx solid ; */
+  border-radius: 10rpx;
+  font-size: 28.12rpx;
+  padding: 20rpx;
+}
+
+.innerBox2 {
+  box-shadow: 1rpx 0 5px rgba(255, 173, 1, 0.3);
+  color: #ffad01;
+}
+
+.innerBox3 {
+  box-shadow: 1rpx 0 5px rgba(5, 225, 211, 0.3);
+  color: #05e1d3;
+}
+
+.innerBox4 {
+  box-shadow: 1rpx 0 5px rgba(240, 78, 76, 0.3);
+  color: #f04e4c;
+}

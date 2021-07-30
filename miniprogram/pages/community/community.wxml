@@ -1,0 +1,30 @@
+<view class="switch-type">
+    <view class="btn {{currentSelectType == 'grade' ? 'active' : ''}}" bindtap='selectedGrade' data-id='grade'>年级</view>
+    <view class="btn {{currentSelectType == 'theme' ? 'active' : ''}}" bindtap='selectedTheme' data-id='theme'>主题</view>
+</view>
+
+<view class="gradebox" wx:if="{{currentSelectType == 'grade'}}" duration="300">
+    <view class="gradebox1">
+        <view class="gradebox1_left">儿童启蒙诗歌</view>
+        <!-- <view class="gradebox1_left"><image src="{{png01}}"></image></view> -->
+        <view class="gradebox1_right">小学古诗词</view>
+    </view>
+    <view class="gradebox1">
+        <view class="gradebox1_left">初中古诗词</view>
+        <view class="gradebox1_right">高中古诗词</view>
+    </view>
+</view>
+<view class="themebox" wx:if="{{currentSelectType == 'theme'}}" duration="300">
+    <view class="themebox1">
+        <view class="themebox1_left">{{text}}</view>
+        <view class="themebox1_right">边塞</view>
+    </view>
+    <view class="themebox1">
+        <view class="themebox1_left" bindtap="link">壮志</view>
+        <view class="themebox1_right">怀古</view>
+    </view>
+    <view class="themebox1">
+        <view class="themebox1_left">友情</view>
+        <view class="themebox1_right">送别</view>
+    </view>
+</view>

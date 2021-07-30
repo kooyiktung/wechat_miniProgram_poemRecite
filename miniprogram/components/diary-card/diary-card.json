@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "x-audio-play": "../audio-play/audio-play"
+  }
+}

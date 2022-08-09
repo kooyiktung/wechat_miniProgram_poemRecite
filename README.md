@@ -1,4 +1,4 @@
-# Project Statment
+# Project Statement
 - index page of this project: pages/index/index
 - cloud environment of development: tenoyt
 - poems data got from: https://api.jisuapi.com/tangshi/chapter
